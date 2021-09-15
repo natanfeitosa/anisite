@@ -1,3 +1,7 @@
 language = "nodejs"
-run = "yarn dev"
 onBoot= "yarn install"
+run = "yarn dev"
+
+[packager]
+afterInstall="yarn dev"
+ignoredPaths=[".git", ".nuxt"]
